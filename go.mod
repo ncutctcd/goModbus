@@ -1,4 +1,4 @@
-module github.com/things-go/go-modbus
+module github.com/ncutctcd/goModbus
 
 go 1.15
 

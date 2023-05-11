@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	modbus "github.com/things-go/go-modbus"
+	modbus "github.com/ncutctcd/goModbus"
 )
 
 func main() {
