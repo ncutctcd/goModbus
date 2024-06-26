@@ -1,6 +1,7 @@
 package modbus
 
 import (
+	"fmt"
 	"log"
 	"os"
 	"sync/atomic"
@@ -69,4 +70,5 @@ func (sf defaultLogger) Errorf(format string, v ...interface{}) {
 // Debug Log DEBUG level message.
 func (sf defaultLogger) Debugf(format string, v ...interface{}) {
 	// sf.Printf("[D]: "+format, v...)
+	fmt.Println("test")
 }

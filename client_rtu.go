@@ -28,8 +28,8 @@ var rtuPool = newPool(rtuAduMaxSize)
 // it will use default /dev/ttyS0 19200 8 1 N and timeout 1000
 func NewRTUClientProvider(opts ...ClientProviderOption) *RTUClientProvider {
 	p := &RTUClientProvider{
-		logger: newLogger("modbusRTUMaster => "),
-		pool:   rtuPool,
+		//logger: newLogger("modbusRTUMaster => "),
+		pool: rtuPool,
 	}
 	for _, opt := range opts {
 		opt(p)
