@@ -35,6 +35,10 @@ type Client interface {
 	// holding registers in a remote device and returns register value.
 	ReadHoldingRegisters(slaveID byte, address, quantity uint16) (results []uint16, err error)
 
+	// ReadHoldingRegistersFourBytes reads the contents of a contiguous block of
+	// holding registers in a remote device and returns register value.
+	ReadHoldingRegistersFourBytes(slaveID byte, address, quantity uint16) (results []byte, err error)
+
 	// WriteSingleRegister writes a single holding register in a remote
 	// device and returns success or failed.
 	WriteSingleRegister(slaveID byte, address, value uint16) error
